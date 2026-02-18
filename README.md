@@ -19,3 +19,13 @@ This analysis focuses on optimizing the payment funnel for a large utility provi
 - **UX Audit for Web:** Prioritize a user experience audit for the browser version of the app to bridge the 8% gap in conversion compared to iOS.
 - **Simplify Meter Reading:** Implement OCR (optical character recognition) or simplify the meter reading form to reduce drop-offs before the payment stage.
 - **Android Stability Check:** Android has the highest volume of sessions but lower conversion than iOS; technical stability during the "click_pay" event should be verified.
+
+## 📁 Dataset
+The dataset used in this analysis is synthetically generated to mimic real-world utility app logs. 
+It contains 5,000 events with the following structure:
+- `user_id`: Unique identifier for each customer.
+- `event_name`: Type of action performed (app_open, view_invoice, payment_success, etc.).
+- `platform`: Device type (Android, iOS, Web).
+- `timestamp`: Date and time of the event.
+
+You can find the raw data in [user_activity.csv](./user_activity.csv).
